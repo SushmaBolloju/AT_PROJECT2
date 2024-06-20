@@ -9,6 +9,7 @@ driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install())
 driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
 driver.maximize_window()
 time.sleep(3)
+
 driver.find_element(By.XPATH,"//input[@placeholder='Username']").send_keys("Admin")
 time.sleep(5)
 driver.find_element(By.XPATH,"//p[@class='oxd-text oxd-text--p orangehrm-login-forgot-header']").click()
