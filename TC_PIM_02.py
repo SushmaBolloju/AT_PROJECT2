@@ -17,6 +17,7 @@ driver.find_element(By.XPATH,"//input[@placeholder='Username']").send_keys("Admi
 driver.find_element(By.XPATH,"//input[@placeholder='Password']").send_keys("admin123")
 driver.find_element(By.XPATH,"//button[@type='submit']").click()
 time.sleep(5)
+
 # Navigate to Admin page
 admin_link = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH,"/html[1]/body[1]/div[1]/div[1]/div[1]/aside[1]/nav[1]/div[2]/ul[1]/li[1]/a[1]")))
 
